@@ -1,0 +1,17 @@
+{
+    "resourceType" : "CarePlan",
+    "id" : "13579-p02",
+    "text" : {
+      "status" : "additional",
+      "div" : "<div<p>углеводы кала\nкальпротектин количественный\nднк лактазной недостаточности\nкреон10000 по 1 капс х 3 р в день с едой 2 недели\nповторный осмотр после обследования</div>"
+    },
+    "status" : "active",
+    "intent" : "plan",
+    "subject" : {
+      "reference" : "Patient/24680",
+      "display" : "Balshow Andrew"
+    },
+    "encounter": {
+      "reference": "Encounter/98-765-4321"
+    }
+  }

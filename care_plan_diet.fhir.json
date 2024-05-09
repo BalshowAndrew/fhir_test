@@ -1,0 +1,17 @@
+{
+    "resourceType" : "CarePlan",
+    "id" : "13579-p01",
+    "text" : {
+      "status" : "additional",
+      "div" : "<div<p>стол индивид с ограничением мол продуктов, искл соки, мед, ограничить фрукты, ягоды</p>\n    </div>"
+    },
+    "status" : "active",
+    "intent" : "plan",
+    "subject" : {
+      "reference" : "Patient/24680",
+      "display" : "Balshow Andrew"
+    },
+    "encounter": {
+      "reference": "Encounter/98-765-4321"
+    }
+  }
