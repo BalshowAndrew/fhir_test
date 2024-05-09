@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "13579",
+    "id": "13579-02",
     "status": "final",
     "category": [
         {
@@ -16,20 +16,19 @@
     "code": {
         "coding": [
             {
-                "system": "http://lionc.org",
-                "code": "15071-8",
-                "display": "Glucose [Moles/volume] in Blood"
+                "system": "http://...",
+                "code": "43478002",
+                "display": "Нарушения стула"
             }
-        ]
+        ],
+        "text": "Стул чаще оформлен, но иногда бывает жидким"
     },
     "subject": {
         "reference": "Patient/f001",
         "display": "Balshow Andrew"
+    },"encounter": {
+        "reference": "encounter/98-765-4321"
     },
-    "valueQuantity": {
-        "value": 6.3,
-        "unit": "mmol/l",
-        "system": "http://unitsofmeasure.org",
-        "code": "mmol/L"
-    }
+    "issued": "2021-12-08T00:00:00Z",
+    "valueBoolean": true
 }
