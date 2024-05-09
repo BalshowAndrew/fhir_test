@@ -1,0 +1,35 @@
+{
+    "resourceType": "Patient",
+    "id": "24680",
+    "name": [
+        {
+            "use": "official",
+            "given": ["Andrew"],
+            "family": "Balshow"
+        }
+    ],
+    "gender" : "male",
+    "birthDate": "1972-02-12",
+    "telecom": [
+        {
+            "value": "80291071734",
+            "use": "mobile",
+            "system": "phone"
+        },
+        {
+            "system": "email",
+            "value": "balshowandrew@gmail.com"
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "15, 11, Alsheuskaga"
+            ],
+            "city": "Minsk",
+            "country": "Belarus",
+            "postalCode": "220073"
+        }
+    ]
+
+}

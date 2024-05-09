@@ -1,0 +1,35 @@
+{
+    "resourceType": "Observation",
+    "id": "13579",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "exam",
+                    "display" : "Exam"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://lionc.org",
+                "code": "15071-8",
+                "display": "Glucose [Moles/volume] in Blood"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f001",
+        "display": "Balshow Andrew"
+    },
+    "valueQuantity": {
+        "value": 6.3,
+        "unit": "mmol/l",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+    }
+}

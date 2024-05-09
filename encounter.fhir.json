@@ -1,0 +1,42 @@
+{
+    "resourceType": "Encounter",
+    "id": "98-765-4321",
+    "status": "completed",
+    "class": [
+        {
+            "coding": [
+                {
+                    "code": "AMB",
+                    "display": "ambulatory"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/2468",
+        "display": "Balshow Andrew"
+    },
+    "serviceProvider": {
+        "reference": "Organization/1.23.456.789",
+        "display": "Лоде"
+    },
+    "participant": [
+        {
+            "actor": {
+                "reference": "Practitioner/12345",
+                "display": "врач-гастроетнеролог 1 категории Заяц Тамара Николаевна"
+            }
+        }
+    ],
+    "diagnosis": [
+        {
+            "condition": [
+                {
+                    "concept": {
+                        "text": "Синдром мальабсорбции: дисахаридазная недостаточность? ори - течение."
+                    }
+                }
+            ]
+        }
+    ]
+}
