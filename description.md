@@ -10,7 +10,8 @@
 
 Представленный документ можно описать с помощью следующих ресурсов:
 - [Patient](/patient.fhir.json)
-- Practicioner
-- Organisation
-- Encounter
-- Observation
+- [Practicioner](/practitioner.fhir.json)
+- [Organisation](/organisation.fhir.json)
+- [Encounter](/encounter.fhir.json)
+- [Observation](/observation_abd_tend.fhir.json)
+- [CarePlan](/care_plan_diet.fhir.json)
