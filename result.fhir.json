@@ -1,5 +1,325 @@
 {
     "resourceType": "Bundle",
-    "id": "reult-01"
-    
+    "id": "reult-01",
+    "type": "document",
+    "timestamp": "2021-12-08T00:00:00Z",
+    "entry": [
+        {
+            "fullUrl": "http://.../Composition/1212-2323-3434",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "1212-2323-3434",
+                "type": {
+                    "text": "Консультативное заключение"
+                },
+                "author": [
+                    {
+                        "reference": "Practitioner/12345",
+                        "display": "врач-гастрэнтеролог Заяц Тамара Николаевна"
+                    }
+                ],
+                "date": "2021-12-08T00:00:00Z",
+                "title": "Консультативное закулючение",
+                "section": [
+                    {
+                        "title": "Лечебное учреждение",
+                        "entry": [
+                            {
+                                "reference": "Organisation/1.23.456.789"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Ф.И.О.",
+                        "entry": [
+                            {
+                                "reference": "Patient/24680"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Протокол исследования:",
+                        "entry": [
+                            {
+                                "reference": "Observation/13579-01"
+                            },
+                            {
+                                "reference": "Observation/13579-02"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Заключение:",
+                        "entry": [
+                            {
+                                "reference": "Encounter/98-765-4321"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "План обследования и лечения по причине обращения:",
+                        "entry": [
+                            {
+                                "reference": "CarePlan/13579-p01"
+                            },
+                            {
+                                "reference": "CarePlan/13579-p02"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Консультант:",
+                        "entry": [
+                            {
+                                "reference": "Practitioner/12345"
+                            }
+                        ]
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://.../Patient/24680",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "24680",
+                "name": [
+                    {
+                        "use": "official",
+                        "given": ["Andrew"],
+                        "family": "Balshow"
+                    }
+                ],
+                "gender" : "male",
+                "birthDate": "1972-02-12",
+                "telecom": [
+                    {
+                        "value": "80291071734",
+                        "use": "mobile",
+                        "system": "phone"
+                    },
+                    {
+                        "system": "email",
+                        "value": "balshowandrew@gmail.com"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "15, 11, Alsheuskaga"
+                        ],
+                        "city": "Minsk",
+                        "country": "Belarus",
+                        "postalCode": "220073"
+                    }
+                ]
+            
+            }
+        },
+        {
+            "fullUrl": "http://.../Practitioner/12345",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "12345",
+                "active": true,
+                "name": [
+                    {
+                        "family": "Заяц",
+                        "given": [
+                            "Тамара", "Николаевна"
+                        ]
+                    }
+                ],
+                "qualification": [
+                    {
+                        "identifier": [
+                            {
+                                "use": "official",
+                                "value": "1-я категория"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "1-0055",
+                                    "display": "Врач-гастроэнтеролог"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://.../Organisation/1.23.456.789",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1.23.456.789",
+                "active": true,
+                "name": "Лодэ"
+            
+            }
+        },
+        {
+            "fullUrl": "http://.../Encounter/98-765-4321",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "98-765-4321",
+                "status": "completed",
+                "class": [
+                    {
+                        "coding": [
+                            {
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/2468",
+                    "display": "Balshow Andrew"
+                },
+                "serviceProvider": {
+                    "reference": "Organization/1.23.456.789",
+                    "display": "Лоде"
+                },
+                "participant": [
+                    {
+                        "actor": {
+                            "reference": "Practitioner/12345",
+                            "display": "врач-гастроетнеролог 1 категории Заяц Тамара Николаевна"
+                        }
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": [
+                            {
+                                "concept": {
+                                    "text": "Синдром мальабсорбции: дисахаридазная недостаточность? ори - течение."
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://.../Observation/13579-01",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "13579-01",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "exam",
+                                "display" : "Exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://...",
+                            "code": "43478001",
+                            "display": "Боль в животе"
+                        }
+                    ],
+                    "text": "Жалобы на боль в левом мезогастрии натощак и после еды"
+                },
+                "subject": {
+                    "reference": "Patient/24680",
+                    "display": "Balshow Andrew"
+                },"encounter": {
+                    "reference": "encounter/98-765-4321"
+                },
+                "issued": "2021-12-08T00:00:00Z",
+                "valueBoolean": true
+            }
+        },
+        {
+            "fullUrl": "http://.../Observation/13579-02",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "13579-02",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "exam",
+                                "display" : "Exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://...",
+                            "code": "43478002",
+                            "display": "Нарушения стула"
+                        }
+                    ],
+                    "text": "Стул чаще оформлен, но иногда бывает жидким"
+                },
+                "subject": {
+                    "reference": "Patient/24680",
+                    "display": "Balshow Andrew"
+                },"encounter": {
+                    "reference": "encounter/98-765-4321"
+                },
+                "issued": "2021-12-08T00:00:00Z",
+                "valueBoolean": true
+            }
+        },
+        {
+            "fullUrl": "http://.../CarePlan/13579-p01",
+            "resource": {
+                "resourceType" : "CarePlan",
+                "id" : "13579-p01",
+                "text" : {
+                  "status" : "additional",
+                  "div" : "<div<p>стол индивид с ограничением мол продуктов, искл соки, мед, ограничить фрукты, ягоды</p>\n    </div>"
+                },
+                "status" : "active",
+                "intent" : "plan",
+                "subject" : {
+                  "reference" : "Patient/24680",
+                  "display" : "Balshow Andrew"
+                },
+                "encounter": {
+                  "reference": "Encounter/98-765-4321"
+                }
+              }
+        },
+        {
+            "fullUrl": "http://.../CarePlan/13579-p02",
+            "resource": {
+                "resourceType" : "CarePlan",
+                "id" : "13579-p02",
+                "text" : {
+                  "status" : "additional",
+                  "div" : "<div<p>стол индивид с ограничением мол продуктов, искл соки, мед, ограничить фрукты, ягоды</p>\n    </div>"
+                },
+                "status" : "active",
+                "intent" : "plan",
+                "subject" : {
+                  "reference" : "Patient/24680",
+                  "display" : "Balshow Andrew"
+                },
+                "encounter": {
+                  "reference": "Encounter/98-765-4321"
+                }
+              }
+        }
+        
+    ]
 }
