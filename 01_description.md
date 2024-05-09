@@ -19,5 +19,6 @@
 - [Observation](/observation_abd_tend.fhir.json)
 - [CarePlan](/care_plan_diet.fhir.json)
 
-Эту коллукцию ресурсов надо собрать в один экземпляр с помощью **Bundle Resource**
-Сформируем из этого экземпляра документ с помощью **Collection Resource**
+Эту коллекцию ресурсов собираем в один экземпляр с помощью **Bundle Resource** и формируем из этого экземпляра документ с помощью **Collection Resource**
+
+Итоговый [json-file](/result.fhir.json)
